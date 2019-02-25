@@ -6,9 +6,18 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class EchoServer extends Thread {
-
+	
+	/**
+	 * Use to send packets.
+	 */
 	protected DatagramSocket socket = null;
+	/**
+	 * Status variable.
+	 */
 	protected boolean running;
+	/**
+	 * Byte array to wrap the messages.
+	 */
 	protected byte[] buffer = new byte[256];
 
 	public EchoServer() throws IOException {
@@ -21,7 +30,6 @@ public class EchoServer extends Thread {
 		while (running) {
 
 			try {
-
 				DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 				socket.receive(packet);
 				InetAddress address = packet.getAddress();
