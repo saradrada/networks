@@ -1,4 +1,4 @@
-package sockets;
+package email;
 import java.net.*;
 import java.io.*;
 public class Email {

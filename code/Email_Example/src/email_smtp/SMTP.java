@@ -1,4 +1,4 @@
-package sockets;
+package email_smtp;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
