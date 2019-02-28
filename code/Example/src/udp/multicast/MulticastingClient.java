@@ -8,7 +8,7 @@ import java.net.MulticastSocket;
 /**
  * 
  * @author Sara Ortiz Drada
- * @version 1.0
+ * @version 1.0.0
  */
 public class MulticastingClient {
 

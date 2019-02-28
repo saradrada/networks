@@ -14,9 +14,9 @@ import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 /**
  * 
  * @author Sara Ortiz Drada
- * @version 1.0
+ * @version 1.0.0
  */
-public class MulticastEchoServer {
+public class MulticastingServer {
 
 	public static void main(String[] args) throws IOException {
 
