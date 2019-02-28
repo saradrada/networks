@@ -18,7 +18,7 @@ public class EchoServer extends Thread {
 	/**
 	 * Byte array to wrap the messages.
 	 */
-	protected byte[] buffer = new byte[256];
+	protected byte[] buffer = new byte[1024];
 
 	public EchoServer() throws IOException {
 		socket = new DatagramSocket(4445);
