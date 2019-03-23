@@ -42,18 +42,20 @@ public class MulticastingServer {
 		while (!linea.equals("salir")) {
 
 //Creamos el buffer a enviar
-			byte[] buffer = linea.getBytes();
+//			byte[] buffer = linea.getBytes();
 
-			// byte[] buffer;
-			// System.out.println(new File("/images/multicast.jpg").getCanonicalPath());
-			// BufferedImage image = ImageIO.read(new File("C:\\images\\multicast.jpg"));
+			 byte[] buffer;
+			 //System.out.println(new File("/images/multicast.jpg").getCanonicalPath());
+			BufferedImage image = ImageIO.read(new File("./Resources/multicast.jpg"));
 
-//			ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-//			ImageIO.write(image, "jpg", outputStream);
-//			String encodedImage = Base64.encode(outputStream.toByteArray());
-//			
+			ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+			ImageIO.write(image, "jpg", outputStream);
+			String encodedImage = Base64.encode(outputStream.toByteArray());
+			
 //			buffer = encodedImage.getBytes();
 //			System.out.println(encodedImage);
+			
+			buffer = extractBytes("./Resources/multicast.jpg");
 
 //Pasamos los datos al datagrama
 			dgp.setData(buffer);
