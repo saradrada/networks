@@ -2,7 +2,7 @@ package runtimeExec;
 
 import java.io.IOException;
 
-public class RuntimeExecTest1 {
+public class RuntimeExecNotepad {
 
 	public static void main(String[] args) {
 		try {

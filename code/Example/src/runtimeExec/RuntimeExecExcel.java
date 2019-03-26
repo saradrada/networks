@@ -2,7 +2,7 @@ package runtimeExec;
 
 import java.io.IOException;
 
-public class RuntimeExecTest2 {
+public class RuntimeExecExcel {
 
     public static void main(String args[])
             throws IOException

@@ -2,7 +2,7 @@ package runtimeExec;
 
 import java.io.IOException;
 
-public class RuntimeExecTest3 {
+public class RuntimeExecWireshark {
 
     public static void main(String args[])
             throws IOException
