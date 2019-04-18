@@ -11,7 +11,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.TargetDataLine;
 
-public class Sender {
+public class UdpServer {
 
 public static void main(String[] args) throws IOException {
 
